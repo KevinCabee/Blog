@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+
+{% block title%}About{% endblock title%}
+
+
+{% block content %}
+<h1>Posts</h1>
+<p>Welcome to our Blog, posts whats on your mind!</p>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <h6 class="card-subtitle">{{ post.subtitle }}</h6>
+        <p class="card-text">{{ post.body|truncatechars:128 }}</p>
+        <a href="{% url 'detail' post.id %}" class="card-link">Continue Reading...</a>
+        <a href="{% url 'edit' post.id %}"></a>
+    </div>
+</div>
+{% endblock content %}
