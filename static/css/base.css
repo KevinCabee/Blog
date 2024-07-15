@@ -1,0 +1,29 @@
+body {
+    background-color: #B8B8AA;
+}
+
+.body-header {
+    background-color: #7f9183;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px 5px;
+}
+
+
+.navbar {
+    background-color: #586f6b;
+}
+
+.navbar a {
+    color: whitesmoke;
+}
+
+
+.dropdown-menu {
+    background-color: #727072;
+}
+

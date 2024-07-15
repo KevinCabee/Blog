@@ -1,13 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 
-{% block title%}About{% endblock title%}
+{% block title%}List{% endblock title%}
+
+
+
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/list.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+{% endblock extra_css %}
+
+
 
 
 {% block content %}
-<h1>Posts</h1>
-<p>Welcome to our Blog, posts whats on your mind!</p>
+<div class="body-header">
+    <h1>Posts List</h1>
+    <p>See what others are saying!</p>
+</div>
+{% for post in post_list %}
 <div class="card">
     <div class="card-body">
         <h5 class="card-title">{{ post.title }}</h5>
@@ -17,4 +31,5 @@
         <a href="{% url 'edit' post.id %}"></a>
     </div>
 </div>
+{% endfor %}
 {% endblock content %}

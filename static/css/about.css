@@ -1,0 +1,22 @@
+img {
+    width: 40%;
+    
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 5px 3px;
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: #AFA060;
+    padding: 5px;
+    width: 60%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

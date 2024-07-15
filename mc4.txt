@@ -1,0 +1,14 @@
+# Mini Challenge 4
+## Password Reset Override
+### Acceptance Criteria
+1. Override the password reset form template: `registration/password_reset_form.html`
+2. Override the password reset email subject line: `registration/password_reset_subject.txt`
+3. Override the password reset email body: `registration/password_reset_email.html`
+4. Override the password reset done view template: `registration/password_reset_done.html`
+4.1. This template just confirms you submitted an email correctly.
+5. Override the password reset confirm template: `registration/password_reset_confirm.html`
+5.1. This template should allow the user to create a new password.
+6. Override the password reset complete template: `registration/password_reset_complete.html`
+6.1. This template informs the user they've successfully changed their password.
+7. Add a link below your log in form with verbiage similiar to "did you forget your password? Click here"
+8. Test.

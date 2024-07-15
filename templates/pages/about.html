@@ -1,11 +1,28 @@
 {% extends 'base.html' %}
-
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+{% endblock extra_css %}
 
 
 {% block title%}About{% endblock title%}
 
 
+
 {% block content %}
-<h1>HOME</h1>
-<p>Hi, Im Kevin a student at SDGKU</p>
+<div class="body-header">
+    <h1>About Us</h1>
+</div>
+<div class="about">
+    <img src="{% static 'img/fastfurious.jpg' %}" alt="fast and furious image">
+    <div class="about-container">
+        <h4>About us</h4>
+        <p>Welcome to MyBlog, where passion meets performance on the road! We're dedicated to bringing you the latest
+            insights, reviews, and stories from the world of cars. Whether you're a seasoned gearhead or just getting
+            revved up about automobiles, our goal is to fuel your enthusiasm with informative articles, expert tips, and
+            engaging content. Join us as we explore everything from classic beauties to cutting-edge technology, all
+            with a drive for celebrating the automotive experience. Buckle up and enjoy the ride with MyBlog!</p>
+    </div>
+</div>
 {% endblock content %}

@@ -1,11 +1,22 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+{% endblock extra_css %}
 
 
 
-{% block title%}About{% endblock title%}
+{% block title%}New Post{% endblock title%}
 
 
 {% block content %}
-<h1>HOME</h1>
-<p></p>
+<div class="body-header">
+    <h1 >New Post</h1>
+</div>
+<form class="new-form" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="create-btn btn btn-success btn-sm" value="Create">
+</form>
 {% endblock content %}
